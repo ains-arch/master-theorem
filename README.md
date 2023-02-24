@@ -66,19 +66,7 @@ The purpose of this lab is to both get you familiar with using these non-github 
         Modify the README file to include:
     
         1. The recurrence relation that describes the function's runtime:
-            $$T(n) = T(n/3) + O(1)$$
-
-            a = 1
-            b = 3
-            f(n) = 1
-
-            ccrit = logba = log(sub3)(1) = 0
-
-            f(n) = thet(n^ccrit * log^k(n))
-            1 = thet(log^k(n))
-            k = 0, 1 = thet(1), True
-
-            Case 2
+            $$T(n) = T(n/3) + 1$$
 
 
         1. The solution to the recurrence you wrote above as provided by the master theorem:
@@ -130,8 +118,8 @@ The purpose of this lab is to both get you familiar with using these non-github 
     | T(n) = T(n/2) + 1    | $\Theta({\log n}            )$ | runtime of the correct binary search      |
     | T(n) = T(n/3) + 1    | $\Theta({\log n}            )$ | runtime of "trinary search"               |
     | T(n) = 2T(n/2) + 1   | $\Theta(n                   )$ | runtime for [finding the median of an unsorted list](https://en.wikipedia.org/wiki/Quickselect) |
-    | T(n) = 2T(n/2) + n   | $\Theta(n*{\log n}          )$ | runtime of merge sort                     |
-    | T(n) = 3T(n/3) + n   | $\Theta(n*{\log n}          )$ | runtime of a trinary merge sort           |
+    | T(n) = 2T(n/2) + n   | $\Theta(n{\log n}          )$ | runtime of merge sort                     |
+    | T(n) = 3T(n/3) + n   | $\Theta(n{\log n}          )$ | runtime of a trinary merge sort           |
     | T(n) = T(n/2) + n^2  | $\Theta(n^2                 )$ |                                           |
     | T(n) = 2T(n/2) + n^2 | $\Theta(n^2                 )$ |                                           |
     | T(n) = 3T(n/2) + n^2 | $\Theta(n^2                 )$ |                                           |
